@@ -6,7 +6,7 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 app.get("/home",(req,res)=>{
-    res.sendFile(path.join(__dirname, '/simple_server.py'));
+    res.sendFile(path.join(__dirname, '/modules.html'));
 });
 app.listen(PORT,()=>{
     console.log(`${PORT}`);
