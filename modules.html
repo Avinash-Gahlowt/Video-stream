@@ -11,9 +11,11 @@
   <body>
       <py-config>
         [[fetch]]
-        files = ["./mathlib.py"]
+        files = ["./mathslib.py"]
       </py-config>
       <py-script>
+from mathslib import subtract
+print(subtract(8, 4))
       </py-script>
   </body>
 </html>
