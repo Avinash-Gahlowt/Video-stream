@@ -6,7 +6,7 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 app.get("/home",(req,res)=>{
-    res.sendFile(path.join(__dirname, '/modules.html'));
+    res.send('home');
 });
 app.listen(PORT,()=>{
     console.log(`${PORT}`);
