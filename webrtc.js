@@ -292,7 +292,7 @@ function websocketServerConnect() {
         throw new Error ("Don't know how to connect to the signalling server with uri" + window.location);
     }
     
-    var ws_url = 'ws://xalene.pythonanywhere.com:8443'
+    var ws_url = 'wss://xalene.pythonanywhere.com:8443'
     setStatus("Connecting to server " + ws_url);
     ws_conn = new WebSocket(ws_url);
     /* When connected, immediately register with the server */
